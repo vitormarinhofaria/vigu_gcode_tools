@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.6)
+project(ViguGcodeTools)
+
+add_executable(g1z20 src/g1z20.cpp)
+add_executable(x2a src/x2a.cpp)
+
+add_compile_definitions(NOME="Vitor")
+
+if(MSVC)
+    target_compile_options(g1z20 PRIVATE /MT)
+    target_link_options(g1z20 PRIVATE /subsystem:console,5.01)
+    target_compile_options(x2a PRIVATE /MT)
+    target_link_options(x2a PRIVATE /subsystem:console,5.01)
+else()
+    if(MINGW)
+        target_link_options(g1z20 PRIVATE -static)
+        target_link_options(x2a PRIVATE -static)
+    endif()
+endif()
