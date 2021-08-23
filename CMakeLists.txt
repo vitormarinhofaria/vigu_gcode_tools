@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.6)
 project(ViguGcodeTools)
-
+set(CXX_STANDARD 17)
 add_executable(g1z20 src/g1z20.cpp)
 add_executable(x2a src/x2a.cpp)
 
