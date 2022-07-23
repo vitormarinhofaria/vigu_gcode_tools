@@ -3,7 +3,7 @@
     - i686-w64-mingw32-c++ (Testado para Windows XP)
 - Visual Studio 2017
     - VC++ 2017 15.9
-    - Suporde do Windows XP para C++
+    - Suporte do Windows XP para C++
 
 
 
